@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const { AppConfig } = require("./config/app.config");
 
+const cors = require("cors");
 const express = require("express");
 const { AppRouter } = require("./server/routers/app.router");
 const { AuthRouter } = require("./server/routers/auth.router");
@@ -8,6 +9,7 @@ const app = express();
 
 const port = 3000;
 app.use(express.json());
+app.use(cors());
 app.use("/", AppRouter);
 app.use("/auth", AuthRouter);
 
