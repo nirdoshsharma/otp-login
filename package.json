@@ -1,0 +1,20 @@
+{
+  "name": "otp-login",
+  "version": "1.0.0",
+  "description": "OTP Login Service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vercel build",
+    "deploy": "vercel deploy --prod"
+  },
+  "author": "Nirdosh Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.2",
+    "nodemailer": "^6.9.2"
+  }
+}
